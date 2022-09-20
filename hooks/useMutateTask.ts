@@ -4,7 +4,6 @@ import { useQueryClient, useMutation } from "@tanstack/react-query";
 import { Task } from "@prisma/client";
 import useStore from "../store";
 import { EditedTask } from "../types";
-import { resourceLimits } from "worker_threads";
 
 export const useMutateTask = () => {
     const queryClient = useQueryClient()
